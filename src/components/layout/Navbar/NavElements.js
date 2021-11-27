@@ -28,11 +28,12 @@ export const NavMenu = styled.ul`
   display: flex;
   list-style: none;
   text-align: center;
+  height: 100%;
 `;
 
 export const NavItem = styled.li`
-  height: inherit;
-  padding: 0.5rem 1rem;
+  margin-top: 1.5em;
+  padding: 0 1rem;
 
   &:hover {
     border-bottom: 3px solid ${props => props.theme.colors.primary};
