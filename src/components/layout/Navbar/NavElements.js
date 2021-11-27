@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 
 export const Nav = styled.nav`
   background: ${props => props.theme.colors.dark};
-  height: 80px;
+  height: 4em;
   display: flex;
   font-size: 1.4rem;
   color: ${props => props.theme.colors.body};
@@ -20,7 +20,7 @@ export const NavContainer = styled.div`
   height: inherit;
   max-width: ${props => props.theme.width.max};
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 3.5em;
   height: inherit;
 `;
 
@@ -41,5 +41,5 @@ export const NavItem = styled.li`
 
 export const NavLink = styled(Link)`
   text-decoration: none;
-  
+  cursor: pointer;
 `;

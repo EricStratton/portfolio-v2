@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <>
       <FooterContainer>
-        <h2>Footer</h2>
+        
       </FooterContainer>
     </>
   )

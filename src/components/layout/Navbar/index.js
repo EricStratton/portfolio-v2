@@ -17,8 +17,12 @@ const Navbar = () => {
             <NavItem>
               <NavLink>Navbar</NavLink>
             </NavItem>
-            <NavItem>Navbar</NavItem>
-            <NavItem>Navbar</NavItem>
+            <NavItem>
+              <NavLink>Navbar</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>Navbar</NavLink>
+            </NavItem>
           </NavMenu>
         </NavContainer>
       </Nav>
