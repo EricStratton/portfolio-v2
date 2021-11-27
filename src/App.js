@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './theme/GlobalStyle';
 import { theme } from './theme/Theme';
 import Layout from './components/layout';
+import Home from './pages/Home';
 
 
 
@@ -13,7 +14,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Layout>
-
+          <Home />
         </Layout>
       </ThemeProvider>
     </>
