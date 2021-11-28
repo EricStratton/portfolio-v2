@@ -9,5 +9,10 @@ export const theme = {
   width: {
     max: '1320px',
     min: '320px'
+  },
+  fontSizes: {
+    sm: '0.8rem',
+    md: '1rem',
+    lg: '1.5rem'
   }
 };
