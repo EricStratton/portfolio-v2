@@ -1,23 +1,13 @@
 import React from 'react';
 
-import Section from './../components/Section';
-import Column from '../components/Column';
+import InfoSection from './../sections/InfoSection';
+import ExperienceSection from './../sections/ExperienceSection';
 
 const Home = () => {
   return (
     <>
-      <Section>
-        <Column></Column>
-      </Section>
-      <Section>
-        <Column></Column>
-        <Column></Column>
-      </Section>
-      <Section>
-        <Column></Column>
-        <Column></Column>
-        <Column></Column>
-      </Section>
+      <InfoSection />
+      <ExperienceSection />
     </>
   )
 }
