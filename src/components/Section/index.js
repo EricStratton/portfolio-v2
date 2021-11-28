@@ -1,11 +1,13 @@
 import React from 'react';
 
-import { SectionContainer } from './SectionElements';
+import { SectionContainer, SectionWrapper } from './SectionElements';
 
 const Section = ({ children }) => {
   return (
     <SectionContainer>
-      {children}
+      <SectionWrapper>
+        {children}
+      </SectionWrapper>
     </SectionContainer>
   )
 }

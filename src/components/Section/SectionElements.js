@@ -5,5 +5,10 @@ export const SectionContainer = styled.div`
   max-width: 76.5em;
   min-height: 31.5em;
   margin: 0 auto;
-  padding: 0 3.5em;
+`;
+
+export const SectionWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  padding: 4em;
 `;
