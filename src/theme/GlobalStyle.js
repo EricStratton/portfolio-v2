@@ -9,6 +9,9 @@ const GlobalStyle = createGlobalStyle`
     font: inherit;
     vertical-align: baseline;
   }
+  html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
   body {
     line-height: 1;
 
