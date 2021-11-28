@@ -5,10 +5,12 @@ import Column from './../../components/Column';
 
 const ExperienceSection = () => {
   return (
-    <Section>
-      <Column></Column>
-      <Column></Column>
-    </Section>
+    <>
+      <Section>
+        <Column></Column>
+        <Column></Column>
+      </Section>
+    </>
   )
 }
 
