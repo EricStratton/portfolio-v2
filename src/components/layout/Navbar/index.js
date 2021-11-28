@@ -15,13 +15,13 @@ const Navbar = () => {
         <NavContainer>
           <NavMenu>
             <NavItem>
-              <NavLink>Navbar</NavLink>
+              <NavLink to='/'>Navbar</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink>Navbar</NavLink>
+              <NavLink to='/'>Navbar</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink>Navbar</NavLink>
+              <NavLink to='/'>Navbar</NavLink>
             </NavItem>
           </NavMenu>
         </NavContainer>
