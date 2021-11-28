@@ -44,7 +44,7 @@ export const Name = styled.h1`
 
 export const HeroDescription = styled.p`
   font-size: ${props => props.theme.fontSizes.lg};
-  margin-bottom: 1.2rem;
+  margin-bottom: 1em;
 `;
 
 export const HeroIconWrapper = styled.div`
@@ -54,6 +54,6 @@ export const HeroIconWrapper = styled.div`
 
 export const HeroIconLink = styled.a`
   font-size: 2.5rem;
-  padding: 0 0.5rem;
+  padding: 0 0.3em;
   color: ${props => props.theme.colors.body};
 `;
