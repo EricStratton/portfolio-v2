@@ -22,11 +22,14 @@ const GlobalStyle = createGlobalStyle`
     background: ${props => props.theme.colors.body};
   }
   h1, h2, h3, h4, h5, h6 {
-  font-family: "Rubik";
+    font-family: "Rubik";
+    font-weight: 700;
   }
   h1 {
     font-size: 3rem;
-    font-weight: 700;
+  }
+  h2 {
+    font-size: 2.7rem;
   }
   a {
     text-decoration: none;
