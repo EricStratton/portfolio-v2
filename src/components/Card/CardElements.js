@@ -10,5 +10,5 @@ export const CardWrapper = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
-  padding: 1em;
+  padding: 2em;
 `;
