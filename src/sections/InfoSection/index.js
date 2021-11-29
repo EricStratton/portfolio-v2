@@ -2,6 +2,7 @@ import React from 'react';
 
 import Section from './../../components/Section';
 import Column from './../../components/Column';
+import Card from './../../components/Card';
 import {
   InfoWrapper,
   InfoHeading,
@@ -19,7 +20,9 @@ const InfoSection = () => {
               <p>Test 1</p>
             </Column>
             <Column>
-              <p>Test 2</p>
+              <Card>
+                <p>Test 2</p>
+              </Card>
             </Column>
           </InfoColumnWrapper>
         </InfoWrapper>
