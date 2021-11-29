@@ -16,7 +16,7 @@ const InfoSection = () => {
         <InfoWrapper>
         <InfoHeading>About Me</InfoHeading>
           <InfoColumnWrapper>
-            <Column>
+            <Column third>
               <p>Test 1</p>
             </Column>
             <Column>
