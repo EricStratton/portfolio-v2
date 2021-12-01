@@ -2,10 +2,10 @@ import React from 'react';
 
 import Section from './../../components/Section';
 import Column from './../../components/Column';
+import SectionHeading from './../../components/SectionHeading';
 import Card from './../../components/Card';
 import {
   InfoWrapper,
-  InfoHeading,
   InfoColumnWrapper,
 } from './InfoElements';
 
@@ -14,7 +14,7 @@ const InfoSection = () => {
     <>
       <Section>
         <InfoWrapper>
-        <InfoHeading>About Me</InfoHeading>
+        <SectionHeading>About Me</SectionHeading>
           <InfoColumnWrapper>
             <Column third>
               <p>Test 1</p>

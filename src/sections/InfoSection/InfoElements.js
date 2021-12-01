@@ -10,7 +10,3 @@ export const InfoColumnWrapper = styled.div`
   display: flex;
   height: 100%;
 `;
-
-export const InfoHeading = styled.h2`
-  margin-bottom: 1.2em;
-`;
