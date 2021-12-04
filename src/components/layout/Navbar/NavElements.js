@@ -35,6 +35,14 @@ export const NavItem = styled.li`
   margin-top: 1.5em;
   padding: 0 1rem;
 
+  &:first-of-type {
+    padding-left: 0;
+  }
+
+  &:last-of-type {
+    padding-right: 0;
+  }
+
   &:hover {
     border-bottom: 3px solid ${props => props.theme.colors.primary};
   }
