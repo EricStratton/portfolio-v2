@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const CardContainer = styled.div`
   display: flex;
+  position: relative;
   border-radius: 15px;
   box-shadow: 0 5px 20px 0 rgb(69 67 96 / 10%);
 `;
