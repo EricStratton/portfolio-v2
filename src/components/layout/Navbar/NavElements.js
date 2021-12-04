@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 
 export const Nav = styled.nav`
   background: ${props => props.theme.colors.dark};
-  height: 4em;
+  height: 3.5em;
   display: flex;
   font-size: 1.4rem;
   color: ${props => props.theme.colors.body};
@@ -28,19 +28,20 @@ export const NavMenu = styled.ul`
   display: flex;
   list-style: none;
   text-align: center;
-  height: 100%;
+  align-items: center;
+  height: fit-content;
 `;
 
 export const NavItem = styled.li`
-  margin-top: 1.5em;
-  padding: 0 1rem;
+  margin: 0 1rem;
+  padding: 1.15em 0;
 
   &:first-of-type {
-    padding-left: 0;
+    margin-left: 0;
   }
 
   &:last-of-type {
-    padding-right: 0;
+    margin-right: 0;
   }
 
   &:hover {
