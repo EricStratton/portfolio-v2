@@ -6,4 +6,5 @@ export const ColumnContainer = styled.div`
   flex-grow: 1;
   width: ${({third}) => (third ? '50%' : '100%')};
   height: auto;
+  padding: 0 1em;
 `;
