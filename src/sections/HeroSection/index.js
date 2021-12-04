@@ -32,7 +32,7 @@ const HeroSection = () => {
                 </HeroImgWrapper>
                 <HeroTextWrapper>
                   <Name>Eric Stratton</Name>
-                  <HeroDescription>I'm a web developer.</HeroDescription>
+                  <HeroDescription>web developer</HeroDescription>
                 </HeroTextWrapper>
                 <HeroIconWrapper>
                   <HeroIconLink href='/'>

@@ -39,12 +39,12 @@ export const HeroTextWrapper = styled.div`
 `;
 
 export const Name = styled.h1`
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
 `;
 
 export const HeroDescription = styled.p`
   font-size: ${props => props.theme.fontSizes.lg};
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 `;
 
 export const HeroIconWrapper = styled.div`
