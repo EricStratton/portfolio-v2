@@ -31,6 +31,9 @@ const GlobalStyle = createGlobalStyle`
   h2 {
     font-size: 2.7rem;
   }
+  h3 {
+    font-size: 1.3rem;
+  }
   a {
     text-decoration: none;
   }
