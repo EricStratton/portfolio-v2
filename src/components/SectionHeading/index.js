@@ -1,5 +1,6 @@
 import React from 'react';
 
+import FadeInUp from './../FadeInUp';
 import {
   SectionH2Container,
   SectionH2,
@@ -9,10 +10,12 @@ import {
 const SectionHeading = ({ children }) => {
   return (
     <>
-      <SectionH2Container>
-        <SectionH2>{children}</SectionH2>
-        <SectionH2Icon />
-      </SectionH2Container>
+      <FadeInUp>
+        <SectionH2Container>
+          <SectionH2>{children}</SectionH2>
+          <SectionH2Icon />
+        </SectionH2Container>
+      </FadeInUp>
     </>
   )
 }

@@ -3,6 +3,7 @@ import { FaLinkedin, FaGithub, FaRegFilePdf } from 'react-icons/fa';
 
 import Section from '../../components/Section';
 import Column from '../../components/Column';
+import FadeInUp from '../../components/FadeInUp';
 import {
   HeroWrapper,
   HeroContainer,
@@ -26,24 +27,30 @@ const HeroSection = () => {
             <HeroContainer>
               <HeroInfoWrapper>
                 <HeroImgWrapper>
-                  <HeroImgCircle>
-                    <HeroImgRendered />
-                  </HeroImgCircle>
+                  <FadeInUp>
+                    <HeroImgCircle>
+                      <HeroImgRendered />
+                    </HeroImgCircle>
+                  </FadeInUp>
                 </HeroImgWrapper>
                 <HeroTextWrapper>
-                  <Name>Eric Stratton</Name>
-                  <HeroDescription>web developer</HeroDescription>
+                  <FadeInUp>
+                    <Name>Eric Stratton</Name>
+                    <HeroDescription>web developer</HeroDescription>
+                  </FadeInUp>
                 </HeroTextWrapper>
                 <HeroIconWrapper>
-                  <HeroIconLink href='/'>
-                    <FaLinkedin />
-                  </HeroIconLink>
-                  <HeroIconLink href='/'>
-                    <FaGithub />
-                  </HeroIconLink>
-                  <HeroIconLink href='/'>
-                    <FaRegFilePdf />
-                  </HeroIconLink>
+                  <FadeInUp>
+                    <HeroIconLink href='/'>
+                      <FaLinkedin />
+                    </HeroIconLink>
+                    <HeroIconLink href='/'>
+                      <FaGithub />
+                    </HeroIconLink>
+                    <HeroIconLink href='/'>
+                      <FaRegFilePdf />
+                    </HeroIconLink>
+                  </FadeInUp>
                 </HeroIconWrapper>
               </HeroInfoWrapper>
             </HeroContainer>
