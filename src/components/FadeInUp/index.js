@@ -4,11 +4,11 @@ import {
   FadeInUpWrapper,
 } from './FadeInUpElements';
 
-const FadeInUp = ({ children }) => {
+const FadeInUp = ({ children, delay }) => {
 
   return (
     <>
-      <FadeInUpWrapper>
+      <FadeInUpWrapper delay={delay}>
         {children}
       </FadeInUpWrapper>
     </>
