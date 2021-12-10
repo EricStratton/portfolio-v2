@@ -1,5 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
+import { ParallaxProvider } from 'react-scroll-parallax';
 import "@fontsource/rubik";
 
 import GlobalStyle from './theme/GlobalStyle';
@@ -13,10 +14,12 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <Layout>
-          <Home />
-        </Layout>
+        <ParallaxProvider>
+          <GlobalStyle />
+          <Layout>
+            <Home />
+          </Layout>
+        </ParallaxProvider>
       </ThemeProvider>
     </>
   );
