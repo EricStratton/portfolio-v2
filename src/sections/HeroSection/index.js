@@ -34,13 +34,13 @@ const HeroSection = () => {
                   </FadeInUp>
                 </HeroImgWrapper>
                 <HeroTextWrapper>
-                  <FadeInUp>
+                  <FadeInUp delay={'0.3s'}>
                     <Name>Eric Stratton</Name>
                     <HeroDescription>web developer</HeroDescription>
                   </FadeInUp>
                 </HeroTextWrapper>
                 <HeroIconWrapper>
-                  <FadeInUp>
+                  <FadeInUp delay={'0.4s'}>
                     <HeroIconLink href='/'>
                       <FaLinkedin />
                     </HeroIconLink>
