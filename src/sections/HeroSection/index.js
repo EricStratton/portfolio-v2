@@ -27,20 +27,20 @@ const HeroSection = () => {
             <HeroContainer>
               <HeroInfoWrapper>
                 <HeroImgWrapper>
-                  <FadeInUp>
+                  <FadeInUp delay={100}>
                     <HeroImgCircle>
                       <HeroImgRendered />
                     </HeroImgCircle>
                   </FadeInUp>
                 </HeroImgWrapper>
                 <HeroTextWrapper>
-                  <FadeInUp delay={'0.3s'}>
+                  <FadeInUp delay={300}>
                     <Name>Eric Stratton</Name>
                     <HeroDescription>web developer</HeroDescription>
                   </FadeInUp>
                 </HeroTextWrapper>
                 <HeroIconWrapper>
-                  <FadeInUp delay={'0.4s'}>
+                  <FadeInUp delay={400}>
                     <HeroIconLink href='/'>
                       <FaLinkedin />
                     </HeroIconLink>

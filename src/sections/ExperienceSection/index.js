@@ -20,13 +20,13 @@ const ExperienceSection = () => {
     <>
       <Section>
         <ExperienceWrapper>
-          <SectionHeading>Experience</SectionHeading>
+          <SectionHeading delay={100}>Experience</SectionHeading>
           <ExperienceColumnWrapper>
             <Column>
               <Card>
                 <ExperienceTimelineContainer>
                   <ExperienceTimelineTextContainer>
-                    <FadeInUp>
+                    <FadeInUp delay={100}>
                       <h3>Bachelor's Degree</h3>
                     </FadeInUp>
                   </ExperienceTimelineTextContainer>
@@ -34,7 +34,7 @@ const ExperienceSection = () => {
                 </ExperienceTimelineContainer>
                 <ExperienceTimelineContainer>
                   <ExperienceTimelineTextContainer>
-                    <FadeInUp>
+                    <FadeInUp delay={100}>
                       <h3>Epicodus</h3>
                     </FadeInUp>
                   </ExperienceTimelineTextContainer>
@@ -47,7 +47,7 @@ const ExperienceSection = () => {
               <Card>
                 <ExperienceTimelineContainer>
                   <ExperienceTimelineTextContainer>
-                    <FadeInUp>
+                    <FadeInUp delay={100}>
                       <h3>GiftRibbn</h3>
                     </FadeInUp>
                   </ExperienceTimelineTextContainer>
@@ -55,7 +55,7 @@ const ExperienceSection = () => {
                 </ExperienceTimelineContainer>
                 <ExperienceTimelineContainer>
                   <ExperienceTimelineTextContainer>
-                    <FadeInUp>
+                    <FadeInUp delay={100}>
                       <h3>EnviroIssues</h3>
                     </FadeInUp>
                   </ExperienceTimelineTextContainer>

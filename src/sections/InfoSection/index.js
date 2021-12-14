@@ -14,7 +14,7 @@ const InfoSection = () => {
     <>
       <Section>
         <InfoWrapper>
-        <SectionHeading>About Me</SectionHeading>
+        <SectionHeading delay={100}>About Me</SectionHeading>
           <InfoColumnWrapper>
             <Column third>
               <p>Test 1</p>
