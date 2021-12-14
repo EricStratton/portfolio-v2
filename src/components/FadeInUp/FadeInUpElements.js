@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 
 const FadeInUpAnimation = keyframes`
   from {
-    transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 40px, 0);
     opacity: 0;
   }
   to {
@@ -12,7 +12,9 @@ const FadeInUpAnimation = keyframes`
 `;
 
 export const FadeInUpWrapper = styled.div.attrs(props => ({
-  delay: props.delay || "0.1s",
+  delay: props.delay,
+  opacity: props.opacity,
 }))`
-  animation: ${FadeInUpAnimation} 1.2s linear ${props => props.delay};
+  animation: ${FadeInUpAnimation} 1.2s linear ${props => props.delay + 'ms'};
+  opacity: ${props => props.opacity};
 `;
