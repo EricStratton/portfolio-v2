@@ -3,6 +3,7 @@ import React from 'react';
 import HeroSection from './../sections/HeroSection';
 import InfoSection from './../sections/InfoSection';
 import ExperienceSection from './../sections/ExperienceSection';
+import ProjectsSection from './../sections/ProjectsSection';
 
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
       <HeroSection />
       <InfoSection />
       <ExperienceSection />
+      <ProjectsSection />
     </>
   )
 }
