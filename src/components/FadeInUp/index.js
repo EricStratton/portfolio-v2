@@ -1,29 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { InView } from 'react-intersection-observer';
 
 import {
   FadeInUpWrapper,
 } from './FadeInUpElements';
 
-const FadeInUp = ({ children, delay }) => {
-  const [opacity, setOpacity] = useState(0);
-
-  const changeOpacity = () => {
-    setOpacity(1);
-  }
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      changeOpacity();
-    }, 1200 + delay); // needs to run the duration of the animation not the duration of the delay // or maybe the duration of the animation PLUS the duration of the delay
-    return () => clearTimeout(timer);
-  }, [delay])
-
+const FadeInUp = ({ children, delay, initialInView }) => {
+  const [inView, setInView] = useState(initialInView ? true : false);
 
   return (
     <>
-      <FadeInUpWrapper delay={delay} opacity={opacity}>
-        {children}
-      </FadeInUpWrapper>
+      <InView 
+      onChange={setInView}
+      threshold={0.2}
+      initialInView={initialInView}
+      triggerOnce>
+        <FadeInUpWrapper className={inView ? 'fade-up-in' : ''} delay={delay}>
+          {children}
+        </FadeInUpWrapper>
+      </InView>
     </>
   )
 }
