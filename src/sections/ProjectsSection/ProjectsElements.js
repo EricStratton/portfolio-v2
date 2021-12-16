@@ -11,3 +11,15 @@ export const ProjectsColumnWrapper = styled.div`
   flex-direction: row;
   margin-bottom: 4em;
 `; 
+
+export const ProjectsTextWrapper = styled.div`
+  width: 80%;
+`;
+
+export const ProjectsHeading = styled.h3`
+  margin-bottom: 1em;
+`;
+
+export const ProjectsDescription = styled.p`
+  line-height: 1.4;
+`;
