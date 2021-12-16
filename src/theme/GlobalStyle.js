@@ -34,6 +34,10 @@ const GlobalStyle = createGlobalStyle`
   h3 {
     font-size: 1.3rem;
   }
+  p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
   a {
     text-decoration: none;
   }
