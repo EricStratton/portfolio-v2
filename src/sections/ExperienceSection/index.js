@@ -18,7 +18,7 @@ import {
 const ExperienceSection = () => {
   return (
     <>
-      <Section>
+      <Section id={'experience'}>
         <ExperienceWrapper>
           <SectionHeading delay={100}>Experience</SectionHeading>
           <ExperienceColumnWrapper>

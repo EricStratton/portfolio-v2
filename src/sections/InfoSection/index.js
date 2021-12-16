@@ -19,7 +19,7 @@ import {
 const InfoSection = () => {
   return (
     <>
-      <Section>
+      <Section id={'about'}>
         <InfoWrapper>
           <SectionHeading delay={100}>About Me</SectionHeading>
           <InfoColumnWrapper>

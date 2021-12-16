@@ -2,9 +2,9 @@ import React from 'react';
 
 import { SectionContainer, SectionWrapper } from './SectionElements';
 
-const Section = ({ children }) => {
+const Section = ({ children, id }) => {
   return (
-    <SectionContainer>
+    <SectionContainer id={id}>
       <SectionWrapper>
         {children}
       </SectionWrapper>

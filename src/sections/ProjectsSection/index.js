@@ -16,7 +16,7 @@ import {
 
 const ProjectsSection = () => {
   return (
-    <Section>
+    <Section id={'projects'}>
       <ProjectsWrapper>
         <SectionHeading delay={100}>Projects</SectionHeading>
         <ProjectsColumnWrapper>
