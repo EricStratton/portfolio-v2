@@ -12,7 +12,7 @@ const FadeInUp = ({ children, delay, initialInView }) => {
     <>
       <InView 
       onChange={setInView}
-      threshold={0.2}
+      threshold={0}
       initialInView={initialInView}
       triggerOnce>
         <FadeInUpWrapper className={inView ? 'fade-up-in' : ''} delay={delay}>

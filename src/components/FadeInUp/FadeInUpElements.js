@@ -11,8 +11,9 @@ const FadeInUpAnimation = keyframes`
 `;
 
 export const FadeInUpWrapper = styled.div`
+  opacity: 0;
+  
   &.fade-up-in {
-    opacity: 0;
     animation: ${FadeInUpAnimation} 1.2s linear ${props => props.delay + 'ms'};
     animation-fill-mode: forwards;
   }
