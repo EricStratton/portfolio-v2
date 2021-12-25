@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const HeroWrapper = styled.div`
   background: ${props => props.theme.colors.dark};
+  position: relative;
 `;
 
 export const HeroContainer = styled.div`

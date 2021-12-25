@@ -17,11 +17,13 @@ import {
   HeroIconWrapper,
   HeroIconLink,
 } from './HeroElements';
+import Shapes from '../../components/Shapes';
 
 const HeroSection = () => {
   return (
     <>
       <HeroWrapper>
+        <Shapes />
         <Section>
           <Column>
             <HeroContainer>
