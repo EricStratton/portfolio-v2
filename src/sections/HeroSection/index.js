@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaLinkedin, FaGithub, FaRegFilePdf } from 'react-icons/fa';
 
 import Section from '../../components/Section';
@@ -10,16 +10,25 @@ import {
   HeroInfoWrapper,
   HeroImgWrapper,
   HeroImgCircle,
-  HeroImgRendered,
+  HeroCodeIcon,
   HeroTextWrapper,
-  Name,
-  HeroDescription,
   HeroIconWrapper,
   HeroIconLink,
 } from './HeroElements';
 import Shapes from '../../components/Shapes';
+import Typed from '../../components/Typed';
 
-const HeroSection = () => {
+
+const HeroSection = () => {  
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, 4500)
+    return () => clearTimeout(timeout);
+  })
+
   return (
     <>
       <HeroWrapper>
@@ -31,18 +40,20 @@ const HeroSection = () => {
                 <HeroImgWrapper>
                   <FadeInUp delay={100} initialInView>
                     <HeroImgCircle>
-                      <HeroImgRendered />
+                      <HeroCodeIcon />
                     </HeroImgCircle>
                   </FadeInUp>
                 </HeroImgWrapper>
                 <HeroTextWrapper>
                   <FadeInUp delay={300} initialInView>
-                    <Name>Eric Stratton</Name>
-                    <HeroDescription>web developer</HeroDescription>
+                    <Typed string={'<h1>Eric Stratton</h1>'} pause={2000} />
+                    {show &&
+                      <Typed string={'<p>web developer</p>'} pause={0} />
+                    }
                   </FadeInUp>
                 </HeroTextWrapper>
                 <HeroIconWrapper>
-                  <FadeInUp delay={400} initialInView>
+                  <FadeInUp delay={6500} initialInView>
                     <HeroIconLink href='/'>
                       <FaLinkedin />
                     </HeroIconLink>
