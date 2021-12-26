@@ -20,6 +20,14 @@ export const ExperienceTimelineContainer = styled.div`
 export const ExperienceTimelineTextContainer = styled.div`
   padding-left: 4em;
   position: relative;
+
+  h3 {
+    margin-bottom: 0.2em;
+  }
+  .dates {
+    opacity: 0.7;
+    margin-bottom: 0.4em;
+  }
 `;
 
 export const SchoolIcon = styled(IoSchoolOutline)`

@@ -27,7 +27,9 @@ const ExperienceSection = () => {
                 <ExperienceTimelineContainer>
                   <ExperienceTimelineTextContainer>
                     <FadeInUp delay={100}>
-                      <h3>Bachelor's Degree</h3>
+                      <p className='dates'>2014 - 2019</p>
+                      <h3>Western Washington University</h3>
+                      <p>Bachelor's Degree</p>
                     </FadeInUp>
                   </ExperienceTimelineTextContainer>
                   <SchoolIcon />
@@ -35,7 +37,9 @@ const ExperienceSection = () => {
                 <ExperienceTimelineContainer>
                   <ExperienceTimelineTextContainer>
                     <FadeInUp delay={100}>
+                      <p className='dates'>2020 - 2021</p>
                       <h3>Epicodus</h3>
+                      <p>Certificate in Web & Moble Development</p>
                     </FadeInUp>
                   </ExperienceTimelineTextContainer>
                   <SchoolIcon />
@@ -48,7 +52,9 @@ const ExperienceSection = () => {
                 <ExperienceTimelineContainer>
                   <ExperienceTimelineTextContainer>
                     <FadeInUp delay={100}>
+                      <p className='dates'>2021 - 2021</p>
                       <h3>GiftRibbn</h3>
+                      <p>Web Developer</p>
                     </FadeInUp>
                   </ExperienceTimelineTextContainer>
                   <WorkIcon />
@@ -56,7 +62,9 @@ const ExperienceSection = () => {
                 <ExperienceTimelineContainer>
                   <ExperienceTimelineTextContainer>
                     <FadeInUp delay={100}>
+                      <p className='dates'>2021 - Current</p>
                       <h3>EnviroIssues</h3>
+                      <p>Web Developer</p>
                     </FadeInUp>
                   </ExperienceTimelineTextContainer>
                   <WorkIcon />
