@@ -6,16 +6,14 @@ export const Svg = styled.svg.attrs(props => ({
   xmlnsXlink: 'http://www.w3.org/1999/xlink',
   'data-speed': props.dataSpeed
 }))`
-  height: 5%;
-  width: 5%;
+  height: 3%;
+  width: 3%;
   overflow: visible;
   position: absolute;
+  filter: drop-shadow(2px 4px 2px #64403E);
   top: ${props => props.top};
   left: ${props => props.left};
   bottom: ${props => props.bottom};
   right: ${props => props.right};
-
-  /* top: 0;
-  left: 0; */
 `;
 
