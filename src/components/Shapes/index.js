@@ -16,9 +16,9 @@ const Shapes = () => {
     shapes.forEach(shape => {
       const speed = shape.getAttribute('data-speed');
       
-      const x = (window.innerWidth - position.x*speed)/100;
-      const y = (window.innerHeight - position.y*speed)/100;
-      const depth = (-(position.x - position.y)/10);
+      const x = (window.innerWidth - position.x*speed)/400;
+      const y = (window.innerHeight - position.y*speed)/400;
+      const depth = (position.x - position.y)/10;
 
       const translate = `translate3d(${x}px, ${y}px, ${depth}px)`;
 
@@ -33,24 +33,23 @@ const Shapes = () => {
           className='shapes'
           dataSpeed={-5}
           color='#fff'
-          top='25%'
-          left='50%'
+          top='35%'
+          left='20%'
           circle
         />
-
         <ShapeSvg
           className='shapes'
           dataSpeed={5}
           color='#fff' 
           top='15%'
-          left='25%'
+          left='15%'
           cresent 
         />
         <ShapeSvg
           className='shapes'
           dataSpeed={2}
           color='#fff' 
-          top='20%'
+          top='15%'
           left='40%'
           x 
         />
@@ -58,39 +57,39 @@ const Shapes = () => {
           className='shapes'
           dataSpeed={6}
           color='#fff'
-          bottom='25%'
-          right='50%' 
+          bottom='15%'
+          right='35%' 
           circle 
         />
         <ShapeSvg
           className='shapes'
           dataSpeed={8}
           color='#fff' 
-          bottom='15%'
-          right='25%'
+          bottom='25%'
+          right='10%'
           cresent 
         />
         <ShapeSvg
           className='shapes'
           dataSpeed={-2} 
           color='#fff' 
-          bottom='20%'
-          right='40%'
+          bottom='30%'
+          right='30%'
           x 
         />
         <ShapeSvg
           className='shapes'
           dataSpeed={4}
           color='#fff'
-          top='45%'
-          right='35%' 
+          top='18%'
+          right='33%' 
           circle 
         />
         <ShapeSvg
           className='shapes'
           dataSpeed={-9} 
           color='#fff' 
-          top='35%'
+          top='12%'
           right='10%'
           cresent 
         />
@@ -99,15 +98,15 @@ const Shapes = () => {
           dataSpeed={6}
           color='#fff' 
           top='40%'
-          right='25%'
+          right='20%'
           x 
         />
         <ShapeSvg
           className='shapes'
           dataSpeed={-7} 
           color='#fff'
-          bottom='45%'
-          left='35%' 
+          bottom='22%'
+          left='32%' 
           circle 
         />
         <ShapeSvg
@@ -122,8 +121,8 @@ const Shapes = () => {
           className='shapes'
           dataSpeed={5}
           color='#fff' 
-          bottom='40%'
-          left='25%'
+          bottom='36%'
+          left='24%'
           x 
         />
       </ShapesContainer>
