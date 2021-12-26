@@ -14,5 +14,6 @@ export const theme = {
     sm: '0.8rem',
     md: '1rem',
     lg: '1.5rem'
-  }
+  },
+  breakpoints: ['0', '43em', '62em', '82em'],
 };
