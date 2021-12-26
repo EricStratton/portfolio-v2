@@ -18,7 +18,7 @@ const Shapes = () => {
       
       const x = (window.innerWidth - position.x*speed)/400;
       const y = (window.innerHeight - position.y*speed)/400;
-      const depth = (position.x - position.y)/10;
+      const depth = (position.x - position.y)/5;
 
       const translate = `translate3d(${x}px, ${y}px, ${depth}px)`;
 
