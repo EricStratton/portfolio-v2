@@ -10,10 +10,6 @@ import {
   InfoColumnWrapper,
   InfoDescriptionWrapper,
   InfoDescription,
-  InfoIconsWrapper,
-  RecordIcon,
-  CodeIcon,
-  MountainIcon,
 } from './InfoElements';
 
 const InfoSection = () => {
@@ -39,11 +35,6 @@ const InfoSection = () => {
                     <InfoDescription>I also like to spend time in local record shops, digging for the coolest old-school house music LPs. Music has always been, and will always be, a major driving force for me. On weekends, I like to attend events with friends and find sweet reprieve from my more cerebral programs of choice.</InfoDescription>
                   </FadeInUp>
                 </InfoDescriptionWrapper>
-                <InfoIconsWrapper>
-                  <CodeIcon />
-                  <MountainIcon />
-                  <RecordIcon />
-                </InfoIconsWrapper>
               </Card>
             </Column>
           </InfoColumnWrapper>
