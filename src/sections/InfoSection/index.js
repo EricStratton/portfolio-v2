@@ -19,7 +19,7 @@ const InfoSection = () => {
         <InfoWrapper>
           <SectionHeading delay={100}>About Me</SectionHeading>
           <InfoColumnWrapper>
-            <Column third>
+            <Column width='50%'>
               <p>Test 1</p>
             </Column>
             <Column>

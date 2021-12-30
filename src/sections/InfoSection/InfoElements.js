@@ -9,6 +9,11 @@ export const InfoWrapper = styled.div`
 export const InfoColumnWrapper = styled.div`
   display: flex;
   height: 100%;
+  flex-direction: column;
+
+  @media screen and (min-width: ${props => props.theme.breakpoints[3]}) {
+    flex-direction: row;
+  }
 `;
 
 export const InfoDescriptionWrapper = styled.div`

@@ -34,12 +34,7 @@ const ProjectsSection = () => {
             </Card>
           </Column>
         </ProjectsColumnWrapper>
-        <ProjectsColumnWrapper>
-          <Column>
-            <Card>
-
-            </Card>
-          </Column>
+        <ProjectsColumnWrapper reverse>
           <Column>
               <FadeInUp delay={300}>
                 <ProjectsTextWrapper>
@@ -47,6 +42,11 @@ const ProjectsSection = () => {
                   <ProjectsDescription>Paro exists to bridge the preferential rift between analog and digital listening. Paro allows users to discover new music digitally to connect with physically.</ProjectsDescription>
                 </ProjectsTextWrapper>
               </FadeInUp>
+          </Column>
+          <Column>
+            <Card>
+
+            </Card>
           </Column>
         </ProjectsColumnWrapper>
       </ProjectsWrapper>

@@ -4,10 +4,10 @@ import {
   ColumnContainer,
 } from './ColumnElements';
 
-const Column = ({ children, third }) => {
+const Column = ({ children, width }) => {
   return (
     <>
-      <ColumnContainer third={third}>
+      <ColumnContainer width={width}>
         {children}
       </ColumnContainer>
     </>

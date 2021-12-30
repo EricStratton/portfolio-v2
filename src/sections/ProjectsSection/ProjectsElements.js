@@ -8,8 +8,12 @@ export const ProjectsWrapper = styled.div`
 
 export const ProjectsColumnWrapper = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-bottom: 4em;
+
+  @media screen and (min-width: ${props => props.theme.breakpoints[3]}) {
+    flex-direction: ${({reverse}) => reverse ? 'row-reverse' : 'row'};
+  }
 `; 
 
 export const ProjectsTextWrapper = styled.div`
