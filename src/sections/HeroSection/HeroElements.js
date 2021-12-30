@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import { HiOutlineCode } from 'react-icons/hi';
 
-const breatheAnimation = keyframes`
+const breatheInAnimation = keyframes`
   0% {
     height: 25%; 
     width: 25%;
@@ -53,7 +53,7 @@ export const HeroImgCircle = styled.div`
 
 export const HeroCodeIcon = styled(HiOutlineCode)`
   color: ${props => props.theme.colors.body};
-  animation: ${breatheAnimation} 1s ease-in-out;
+  animation: ${breatheInAnimation} 1s ease-in-out;
 `;
 
 export const HeroTextWrapper = styled.div`
