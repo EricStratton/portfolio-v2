@@ -13,7 +13,7 @@ const ParallaxComponent = ({ children }) => {
     } else {
       setIsMobile(true);
     }
-  }, [size[0]]);
+  }, [size]);
 
   return (
     <>
