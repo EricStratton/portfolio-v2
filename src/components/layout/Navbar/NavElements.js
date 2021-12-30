@@ -29,12 +29,12 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
   align-items: center;
-  height: fit-content;
+  height: 100%;
 `;
 
 export const NavItem = styled.li`
   margin: 0 1rem;
-  padding: 1.15em 0;
+  height: 100%;
 
   &:first-of-type {
     margin-left: 0;
@@ -43,13 +43,17 @@ export const NavItem = styled.li`
   &:last-of-type {
     margin-right: 0;
   }
-
-  &:hover {
-    border-bottom: 3px solid ${props => props.theme.colors.primary};
-  }
 `;
 
 export const NavLink = styled(Link)`
   text-decoration: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  &:hover,
+  &.active {
+    border-bottom: 3px solid ${props => props.theme.colors.primary};
+  }
 `;
