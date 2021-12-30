@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import {
   Nav,
@@ -7,11 +7,24 @@ import {
   NavItem,
   NavLink,
 } from './NavElements';
+import { useScrollPosition } from '../../../hooks/useScrollPosition';
+import { useEffect } from 'react/cjs/react.development';
 
 const Navbar = () => {
+  const scrollPostition = useScrollPosition();
+  const [scrollDown, setScrollDown] = useState(false);
+
+  useEffect(() => {
+    if(scrollPostition.scrollDirection === 'down') {
+      setScrollDown(true);
+    } else {
+      setScrollDown(false);
+    }
+  }, [scrollPostition]);
+
   return (
     <>
-      <Nav>
+      <Nav scrollDown={scrollDown}>
         <NavContainer>
           <NavMenu>
             <NavItem>
@@ -21,7 +34,7 @@ const Navbar = () => {
                 duration={500}
                 spy={true}
                 exact='true'
-                offset={-80}
+                offset={78}
               >About Me</NavLink>
             </NavItem>
             <NavItem>
@@ -30,7 +43,7 @@ const Navbar = () => {
                 duration={500}
                 spy={true}
                 exact='true'
-                offset={-80}
+                offset={78}
               >Experience</NavLink>
             </NavItem>
             <NavItem>
@@ -39,7 +52,7 @@ const Navbar = () => {
                 duration={500}
                 spy={true}
                 exact='true'
-                offset={-80}
+                offset={78}
               >Projects</NavLink>
             </NavItem>
           </NavMenu>

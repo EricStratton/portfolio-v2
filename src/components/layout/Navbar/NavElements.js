@@ -8,7 +8,8 @@ export const Nav = styled.nav`
   display: flex;
   font-size: 1.4rem;
   color: ${props => props.theme.colors.body};
-  top: 0;
+  top: ${({scrollDown}) => (scrollDown ? '-3.5em' : 0)};
+  transition: top 0.5s ease-in-out;
   position: sticky;
   z-index: 99;
 `;
