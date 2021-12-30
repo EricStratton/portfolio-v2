@@ -9,7 +9,11 @@ export const ExperienceWrapper = styled.div`
 
 export const ExperienceColumnWrapper = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
+  @media screen and (min-width: ${props => props.theme.breakpoints[3]}) {
+    flex-direction: row;
+  }
 `;
 
 export const ExperienceTimelineContainer = styled.div`

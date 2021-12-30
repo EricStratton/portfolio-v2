@@ -5,7 +5,6 @@ export const SectionH2Container = styled.div`
   position: relative;
   margin-bottom: 6em;
   margin-left: 2em;
-  overflow: hidden;
 
   @media screen and (min-width: ${props => props.theme.breakpoints[1]}) {
     margin: 4em 0;
