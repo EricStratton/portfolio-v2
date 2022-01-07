@@ -34,6 +34,7 @@ export const HeroInfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 26.5em;
 `;
 
 export const HeroImgWrapper = styled.div`
