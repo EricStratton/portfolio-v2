@@ -34,6 +34,9 @@ const GlobalStyle = createGlobalStyle`
   h3 {
     font-size: 1.3rem;
   }
+  label,
+  input,
+  textarea,
   p {
     font-size: 1.1rem;
     line-height: 1.4;
