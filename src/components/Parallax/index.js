@@ -4,14 +4,14 @@ import { Parallax } from 'react-scroll-parallax';
 import { useWindowSize } from '../../hooks/useWindowSize';
 
 const ParallaxComponent = ({ children }) => {
-  const [isMobile, setIsMobile] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
   const size = useWindowSize();
 
   useEffect(() => {
-    if(size[0] > 768) {
-      setIsMobile(false);
-    } else {
+    if(size[0] < 768) {
       setIsMobile(true);
+    } else {
+      setIsMobile(false);
     }
   }, [size]);
 
