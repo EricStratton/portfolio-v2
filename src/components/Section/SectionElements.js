@@ -24,6 +24,7 @@ export const SectionWrapper = styled.div`
   display: flex;
   width: 100%;
   padding: 2em 0;
+  justify-content: center;
 
   @media screen and (min-width: ${props => props.theme.breakpoints[1]}) {
     padding: 2em;
