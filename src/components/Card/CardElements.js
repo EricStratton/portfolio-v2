@@ -6,6 +6,8 @@ export const CardContainer = styled.div`
   border-radius: 15px;
   box-shadow: 0 5px 20px 0 rgb(69 67 96 / 10%);
   margin-bottom: 5em;
+  width: ${({width}) => (width ? width : 'auto')};
+  background-color: ${props => props.theme.colors.body};
 
   @media screen and (min-width: ${props => props.theme.breakpoints[1]}) {
     margin-bottom: 4em;

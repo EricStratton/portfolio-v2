@@ -3,11 +3,11 @@ import ParallaxComponent from './../Parallax';
 
 import { CardContainer, CardWrapper } from './CardElements';
 
-const Card = ({ children }) => {
+const Card = ({ children, width }) => {
   return (
     <>
       <ParallaxComponent>
-        <CardContainer>
+        <CardContainer width={width}>
           <CardWrapper>
             {children}
           </CardWrapper>
