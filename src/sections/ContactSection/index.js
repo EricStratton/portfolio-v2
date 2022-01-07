@@ -17,12 +17,12 @@ const ContactSection = () => {
       <ContactWrapper>
         <Section id='contact'>
           <ContactSectionWrapper>
-            <Card>
-            <SectionHeading delay={100}>Contact Me</SectionHeading>
-              <Column>
+            <Column>
+              <Card>
+                <SectionHeading delay={100}>Contact Me</SectionHeading>
                 <ContactForm />
-              </Column>
-            </Card>
+              </Card>
+            </Column>
           </ContactSectionWrapper>
         </Section>
       </ContactWrapper>

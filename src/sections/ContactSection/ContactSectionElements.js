@@ -2,9 +2,10 @@ import styled from 'styled-components';
 
 export const ContactWrapper = styled.div`
   position: relative;
-  height: 100vh;
+  height: 100%;
 `;
 
 export const ContactSectionWrapper = styled.div`
-  flex: 0.75;
+  flex: 0.6;
+  width: 100%;
 `;
