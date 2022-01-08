@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { Link } from 'react-scroll';
+import { Link as LinkS } from 'react-scroll';
+import { NavLink as NavLinkR } from 'react-router-dom';
 
 
 export const Nav = styled.nav`
@@ -46,7 +47,7 @@ export const NavItem = styled.li`
   }
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled(LinkS)`
   text-decoration: none;
   cursor: pointer;
   display: flex;
@@ -58,3 +59,22 @@ export const NavLink = styled(Link)`
     border-bottom: 3px solid ${props => props.theme.colors.primary};
   }
 `;
+
+export const PageLinkWrapper = styled.div`
+  position: absolute;
+  right: 5%;
+`;
+
+export const MobileNav = styled.div`
+  position: absolute;
+  right: 5%;
+
+  svg {
+    font-size: 2rem;
+    color: ${props => props.theme.colors.body};
+  }
+`;
+
+export const PageLink = styled(NavLinkR)`
+  color: ${props => props.theme.colors.body};
+`
