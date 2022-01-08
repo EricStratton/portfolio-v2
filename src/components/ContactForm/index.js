@@ -10,7 +10,7 @@ import {
   StyledErrorMessage,
   FormButtonWrapper,
 } from './ContactForm';
-import { StyledButton as Button } from '../Button/Button';
+import { SubmitButton as Button } from '../Button';
 
 const ContactForm = () => {
   return (
@@ -24,7 +24,6 @@ const ContactForm = () => {
           message: '',
         }}
         validate={values => {
-          console.log('VALIDATE:', values);
           const errors = {};
           if (!values.email) {
             errors.email = 'Required';
@@ -84,7 +83,7 @@ const ContactForm = () => {
                   </FormFieldWrapper>
                 </InputWrapper>
                 <FormButtonWrapper>
-                  <Button type='submit' disabled={!isValid || isSubmitting}>Submit</Button>
+                  <Button disabled={!isValid || isSubmitting}>Submit</Button>
                 </FormButtonWrapper>
                 </Form>
             </FormWrapper> 
