@@ -1,13 +1,20 @@
 import React from 'react';
 
-import {
-  StyledButton
-} from './Button';
+import { ForSubmit, ForNav } from './Button';
 
-const Button = () => {
+export const SubmitButton = ({ children }) => {
   return (
-    <StyledButton />
+    <ForSubmit type='submit'>{children}</ForSubmit>
   )
 }
 
-export default Button;
+export const NavButton = ({ children, onMouseEnter, onMouseLeave, transparent }) => {
+  return (
+    <ForNav
+      type='button'
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      transparent
+    >{children}</ForNav>
+  )
+}
