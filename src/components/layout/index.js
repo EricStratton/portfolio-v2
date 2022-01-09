@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
   const handleClick = () => setClick(!click);
 
   useEffect(() => {
-    if(size[0] < 768) {
+    if(size[0] <= 768) {
       setIsMobile(true);
     } else {
       setIsMobile(false);

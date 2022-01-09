@@ -9,7 +9,7 @@ export const ShapesContainer = styled.section`
   overflow: hidden;
   display: none;
 
-  @media screen and (min-width: ${props => props.theme.breakpoints[2]}) {
+  @media screen and (min-width: ${props => props.theme.breakpoints[3]}) {
     display: block;
   }
 `;
