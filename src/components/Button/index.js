@@ -8,7 +8,7 @@ export const SubmitButton = ({ children }) => {
   )
 }
 
-export const NavButton = ({ children, onMouseEnter, onMouseLeave, transparent }) => {
+export const NavButton = ({ children, onMouseEnter, onMouseLeave }) => {
   return (
     <ForNav
       type='button'
