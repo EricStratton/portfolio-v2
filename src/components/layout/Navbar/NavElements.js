@@ -57,6 +57,7 @@ export const NavLink = styled(LinkS)`
   &:hover,
   &.active {
     border-bottom: 3px solid ${props => props.theme.colors.primary};
+    -webkit-tap-highlight-color: transparent;
   }
 `;
 

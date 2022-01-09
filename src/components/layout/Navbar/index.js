@@ -14,15 +14,12 @@ import {
   PageLink,
 } from './NavElements';
 import { useScrollPosition } from './../../../hooks/useScrollPosition';
-import { useWindowSize } from './../../../hooks/useWindowSize';
 import { NavButton as Button } from './../../Button';
+import { navData } from './../../../data/navData';
 
-const Navbar = () => {
-  const scrollPostition = useScrollPosition();
+const Navbar = ({ isMobile, click, handleClick }) => {
   const [scrollDown, setScrollDown] = useState(false);
-  const [click, setClick] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-  const size = useWindowSize();
+  const scrollPostition = useScrollPosition();
   const [isContact, setIsContact] = useState(false);
   const location = useLocation();  
   const [hover, setHover] = useState(false);
@@ -36,14 +33,6 @@ const Navbar = () => {
   }, [location]);
 
   useEffect(() => {
-    if(size[0] < 768) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  }, [size]);
-
-  useEffect(() => {
     if(isMobile) {
       return;
     }
@@ -53,8 +42,6 @@ const Navbar = () => {
       setScrollDown(false);
     }
   }, [isMobile, scrollPostition]);
-
-  const handleClick = () => setClick(!click);
 
   const handleOnHover = () => setHover(!hover);
 
@@ -75,44 +62,30 @@ const Navbar = () => {
             !isMobile ?
             <>
               <NavMenu>
-                <NavItem>
-                  <NavLink
-                    to='about'
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact='true'
-                    offset={78}
-                  >About Me</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink to='experience'
-                      smooth={true}
-                      duration={500}
-                      spy={true}
-                      exact='true'
-                      offset={78}
-                    >Experience</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink to='projects'
-                      smooth={true}
-                      duration={500}
-                      spy={true}
-                      exact='true'
-                      offset={78}
-                    >Projects</NavLink>
-                  </NavItem>
+                {navData.map((item, index) =>  {
+                  return item.path === '/contact' ?
+                    <PageLinkWrapper key={index}>
+                      <PageLink 
+                        to='/contact'
+                      ><Button
+                          onMouseEnter={handleOnHover}
+                          onMouseLeave={handleOnHover}                
+                        >{item.title}  { hover ? <MdArrowForward /> : <MdKeyboardArrowRight /> }</Button>
+                      </PageLink>
+                    </PageLinkWrapper>
+                :
+                    <NavItem key={index}>
+                      <NavLink
+                        to={item.path}
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={78}
+                      >{item.title}</NavLink>
+                    </NavItem>
+                  })}
                 </NavMenu>
-                <PageLinkWrapper>
-                  <PageLink 
-                    to='/contact'
-                  ><Button
-                      onMouseEnter={handleOnHover}
-                      onMouseLeave={handleOnHover}                
-                    >Contact me  { hover ? <MdArrowForward /> : <MdKeyboardArrowRight /> }</Button>
-                  </PageLink>
-                </PageLinkWrapper>
               </>
               :
               <MobileNav onClick={handleClick}>
