@@ -10,7 +10,10 @@ import {
   InfoColumnWrapper,
   InfoDescriptionWrapper,
   InfoDescription,
+  InfoImgWrapper,
+  InfoImg,
 } from './InfoElements';
+import it_me from './../../assets/it_me.png';
 
 const InfoSection = () => {
   return (
@@ -20,7 +23,9 @@ const InfoSection = () => {
           <SectionHeading delay={100}>About Me</SectionHeading>
           <InfoColumnWrapper>
             <Column width='50%'>
-              <p>Test 1</p>
+              <InfoImgWrapper>
+                <InfoImg src={it_me} />
+              </InfoImgWrapper>
             </Column>
             <Column>
               <Card>
