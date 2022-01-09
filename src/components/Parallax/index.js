@@ -8,7 +8,7 @@ const ParallaxComponent = ({ children }) => {
   const size = useWindowSize();
 
   useEffect(() => {
-    if(size[0] < 768) {
+    if(size[0] < 992) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
