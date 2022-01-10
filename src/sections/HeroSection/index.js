@@ -17,9 +17,9 @@ import {
 } from './HeroElements';
 import Shapes from '../../components/Shapes';
 import Typed from '../../components/Typed';
+import Document from './../../assets/eric_stratton_resume.pdf';
 
-
-const HeroSection = () => {  
+const HeroSection = () => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const HeroSection = () => {
       setShow(true)
     }, 4500)
     return () => clearTimeout(timeout);
-  })
+  });
 
   return (
     <>
@@ -37,34 +37,34 @@ const HeroSection = () => {
           <Column>
             <HeroContainer>
               <HeroInfoWrapper>
-                <HeroImgWrapper>
-                  <FadeInUp delay={100} initialInView>
+                <FadeInUp delay={100} initialInView>
+                  <HeroImgWrapper>
                     <HeroImgCircle>
                       <HeroCodeIcon />
                     </HeroImgCircle>
-                  </FadeInUp>
-                </HeroImgWrapper>
-                <HeroTextWrapper>
-                  <FadeInUp delay={300} initialInView>
+                  </HeroImgWrapper>
+                </FadeInUp>
+                <FadeInUp delay={300} initialInView>
+                  <HeroTextWrapper>
                     <Typed string={'<h1>Eric Stratton</h1>'} pause={2000} />
                     {show &&
                       <Typed string={'<p>web developer</p>'} pause={0} />
                     }
-                  </FadeInUp>
-                </HeroTextWrapper>
-                <HeroIconWrapper>
-                  <FadeInUp delay={6500} initialInView>
-                    <HeroIconLink href='/'>
+                  </HeroTextWrapper>
+                </FadeInUp>
+                <FadeInUp delay={6500} initialInView>
+                  <HeroIconWrapper>
+                    <HeroIconLink href='https://www.linkedin.com/in/eric-j-stratton/' target='_blank' rel='noopener noreferrer'>
                       <FaLinkedin />
                     </HeroIconLink>
-                    <HeroIconLink href='/'>
+                    <HeroIconLink href='https://github.com/EricStratton' target='_blank' rel='noopener noreferrer'>
                       <FaGithub />
                     </HeroIconLink>
-                    <HeroIconLink href='/'>
+                    <HeroIconLink href={Document} target='_blank' rel='noopener noreferrer'>
                       <FaRegFilePdf />
                     </HeroIconLink>
-                  </FadeInUp>
-                </HeroIconWrapper>
+                  </HeroIconWrapper>
+                </FadeInUp>
               </HeroInfoWrapper>
             </HeroContainer>
           </Column>

@@ -80,4 +80,9 @@ export const HeroIconLink = styled.a`
   font-size: 2.5rem;
   padding: 0 0.3em;
   color: ${props => props.theme.colors.body};
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    transform: translate(0, -5px);
+  }
 `;
