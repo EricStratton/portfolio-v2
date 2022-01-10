@@ -2,7 +2,7 @@ import styled  from 'styled-components';
 
 export const SectionContainer = styled.div`
   display: flex;
-  max-width: 76.5em;
+  max-width: 80em;
   align-items: center;
   min-width: ${props => props.theme.width.min};
 
