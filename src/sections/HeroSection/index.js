@@ -54,13 +54,13 @@ const HeroSection = () => {
                 </FadeInUp>
                 <FadeInUp delay={6500} initialInView>
                   <HeroIconWrapper>
-                    <HeroIconLink href='https://www.linkedin.com/in/eric-j-stratton/' target='_blank' rel='noopener noreferrer'>
+                    <HeroIconLink aria-label='LinkedIn' href='https://www.linkedin.com/in/eric-j-stratton/' target='_blank' rel='noopener noreferrer'>
                       <FaLinkedin />
                     </HeroIconLink>
-                    <HeroIconLink href='https://github.com/EricStratton' target='_blank' rel='noopener noreferrer'>
+                    <HeroIconLink aria-label='GitHub' href='https://github.com/EricStratton' target='_blank' rel='noopener noreferrer'>
                       <FaGithub />
                     </HeroIconLink>
-                    <HeroIconLink href={Document} target='_blank' rel='noopener noreferrer'>
+                    <HeroIconLink aria-label='Resume' href={Document} target='_blank' rel='noopener noreferrer'>
                       <FaRegFilePdf />
                     </HeroIconLink>
                   </HeroIconWrapper>

@@ -24,7 +24,7 @@ const InfoSection = () => {
           <InfoColumnWrapper>
             <Column width='50%'>
               <InfoImgWrapper>
-                <InfoImg src={it_me} />
+                <InfoImg alt='A portrait of me on a soft purple background.' src={it_me} />
               </InfoImgWrapper>
             </Column>
             <Column>
