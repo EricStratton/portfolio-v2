@@ -61,7 +61,8 @@ export const NavLink = styled(LinkS)`
   }
 `;
 
-export const PageLinkWrapper = styled.div`
+export const PageLinkWrapper = styled.li`
+marker: none;
   position: absolute;
   right: 5%;
 `;

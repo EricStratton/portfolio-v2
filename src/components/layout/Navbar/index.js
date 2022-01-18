@@ -36,7 +36,7 @@ const Navbar = ({ isMobile, click, handleClick }) => {
     if(isMobile) {
       return;
     }
-    if (scrollPostition.scrollDirection === 'down') {
+    if(scrollPostition.scrollDirection === 'down') {
       setScrollDown(true);
     } else {
       setScrollDown(false);
@@ -50,14 +50,16 @@ const Navbar = ({ isMobile, click, handleClick }) => {
       <Nav scrollDown={scrollDown}>
         <NavContainer>
           {isContact ?
-            <PageLinkWrapper>
-              <PageLink
-                to='/'
-              ><Button
-                  onMouseEnter={handleOnHover}
-                  onMouseLeave={handleOnHover}
-              >{ hover ? <MdArrowBack /> : <MdKeyboardArrowLeft /> } Home</Button></PageLink>
-            </PageLinkWrapper>
+            <NavMenu>
+              <PageLinkWrapper>
+                <PageLink
+                  to='/'
+                ><Button
+                    onMouseEnter={handleOnHover}
+                    onMouseLeave={handleOnHover}
+                >{ hover ? <MdArrowBack /> : <MdKeyboardArrowLeft /> } Home</Button></PageLink>
+              </PageLinkWrapper>
+            </NavMenu>
           :
             !isMobile ?
             <>
@@ -66,7 +68,7 @@ const Navbar = ({ isMobile, click, handleClick }) => {
                   return item.path === '/contact' ?
                     <PageLinkWrapper key={index}>
                       <PageLink 
-                        to='/contact'
+                        to={item.path}
                       ><Button
                           onMouseEnter={handleOnHover}
                           onMouseLeave={handleOnHover}                
