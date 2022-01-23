@@ -57,9 +57,9 @@ export const InfoImgWrapper = styled.figure`
 export const InfoImg = styled.img`
   position: absolute;
   top: 25px;
-  left: -20px;
+  left: -30px;
   
   @media screen and (min-width: ${props => props.theme.breakpoints[3]}) {
-    left: 5px;
+    left: 0px;
   }
 `;
