@@ -6,6 +6,7 @@ export const ContactWrapper = styled.div`
 `;
 
 export const ContactSectionWrapper = styled.div`
-  flex: 0.6;
+  flex: 1;
   width: 100%;
+  max-width: 48em;
 `;
