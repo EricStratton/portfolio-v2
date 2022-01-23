@@ -59,7 +59,11 @@ export const InfoImg = styled.img`
   top: 25px;
   left: -30px;
   
+  @media screen and (min-width: ${props => props.theme.breakpoints[2]}) {
+    left: -10px;
+  }
+
   @media screen and (min-width: ${props => props.theme.breakpoints[3]}) {
-    left: 0px;
+    left: 2px;
   }
 `;
