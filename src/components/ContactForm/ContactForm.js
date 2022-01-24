@@ -83,3 +83,11 @@ export const FormButtonWrapper = styled.div`
   }
 `;
 
+export const ResponseStatusWrapper = styled.div`
+  position: relative;
+  top: 15px;
+`;
+
+export const ResponseStatus = styled.p`
+  color: #4bb543
+`;

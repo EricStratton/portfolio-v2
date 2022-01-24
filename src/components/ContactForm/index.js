@@ -9,6 +9,8 @@ import {
   FormFieldLabel,
   StyledErrorMessage,
   FormButtonWrapper,
+  ResponseStatusWrapper,
+  ResponseStatus,
 } from './ContactForm';
 import { SubmitButton as Button } from '../Button';
 
@@ -32,25 +34,26 @@ const ContactForm = () => {
           }
           return errors;
         }}
-        onSubmit={(values, { setSubmitting, setFieldError }) => {
+        onSubmit={(values, { setSubmitting, setStatus }) => {
           setSubmitting(true);
           axios({
             method: 'POST',
             url: 'https://formspree.io/f/xyyozobw',
             data: values,
           })
-            .then((response) => {
-              console.log("Response:", response); 
+            .then((response) => {   
+              console.log('Response:', response);
+              if(response.status === 200) setStatus('Success!');
             })
             .catch((error) => {
-              setFieldError(error);
+              setStatus('Oops, something went wrong:', error.status);
             });
           setTimeout(() => {
             setSubmitting(false);
           }, 400);
         }}
       >
-        {({ isSubmitting, isValid }) => (
+        {({ isSubmitting, isValid, status }) => (
             <FormWrapper>
               <Form>
                 <InputWrapper>
@@ -86,6 +89,9 @@ const ContactForm = () => {
                   <Button disabled={!isValid || isSubmitting}>Submit</Button>
                 </FormButtonWrapper>
                 </Form>
+                <ResponseStatusWrapper>
+                  <ResponseStatus green={status === 'Success!' && true}>{status ? status : ''}</ResponseStatus>
+                </ResponseStatusWrapper>
             </FormWrapper> 
         )}
       </Formik>
