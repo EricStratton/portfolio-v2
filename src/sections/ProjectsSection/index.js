@@ -11,8 +11,12 @@ import {
   ProjectsTextWrapper,
   ProjectsHeading,
   ProjectsDescription,
-
 } from './ProjectsElements';
+import Accordion from '../../components/Accordion';
+import LazyVideo from '../../components/LazyVideo';
+import Paro from './../../assets/paro.mp4';
+import FindWax from './../../assets/findWax.mp4';
+
 
 const ProjectsSection = () => {
   return (
@@ -30,7 +34,11 @@ const ProjectsSection = () => {
           </Column>
           <Column>
             <Card>
-
+              <Accordion
+                link='https://github.com/EricStratton/find-wax'
+              >
+                <LazyVideo video={FindWax} />
+              </Accordion>
             </Card>
           </Column>
         </ProjectsColumnWrapper>
@@ -45,7 +53,11 @@ const ProjectsSection = () => {
           </Column>
           <Column>
             <Card>
-
+              <Accordion
+                link='https://github.com/EricStratton/paro-team-week'
+              >
+                <LazyVideo video={Paro} />
+              </Accordion>
             </Card>
           </Column>
         </ProjectsColumnWrapper>
