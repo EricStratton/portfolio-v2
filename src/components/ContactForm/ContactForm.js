@@ -71,7 +71,7 @@ export const FormFieldLabel = styled.label`
 
 export const StyledErrorMessage = styled(ErrorMessage)`
   margin-top: 1em;
-  color: red;
+  color: #ff0033;
 `;
 
 export const FormButtonWrapper = styled.div`
@@ -89,5 +89,5 @@ export const ResponseStatusWrapper = styled.div`
 `;
 
 export const ResponseStatus = styled.p`
-  color: #4bb543
+  color: ${({green}) => (green ? '#4bb543' : '#ff0033')};
 `;
