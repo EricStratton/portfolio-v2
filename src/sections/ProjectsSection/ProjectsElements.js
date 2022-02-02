@@ -9,10 +9,19 @@ export const ProjectsWrapper = styled.div`
 export const ProjectsColumnWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 4em;
+  margin-bottom: 0;
+
+  @media screen and (min-width: ${props => props.theme.breakpoints[3]}) {
+    margin-bottom: 1em;
+  }
+
+  @media screen and (min-width: ${props => props.theme.breakpoints[3]}) {
+    margin-bottom: 2.5em;
+  }
 
   @media screen and (min-width: ${props => props.theme.breakpoints[3]}) {
     flex-direction: ${({reverse}) => reverse ? 'row-reverse' : 'row'};
+    margin-bottom: 4em;
   }
 `; 
 

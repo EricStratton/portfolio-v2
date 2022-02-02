@@ -7,7 +7,11 @@ export const ColumnContainer = styled.div`
   width: auto;
   height: auto;
   padding: 0 .8em;
-  margin-bottom: 4em;
+  margin-bottom: 3.5em;
+
+  &.last-of-type {
+    background-color: red;
+  }
 
   @media screen and (min-width: ${props => props.theme.breakpoints[1]}) {
     margin-bottom: 3em;
